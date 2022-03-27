@@ -1,4 +1,5 @@
 # Unofficial Flatpak Client
+Not for production. Just for learning.
 
 ## Table of Contents
 
@@ -9,7 +10,7 @@
 
 ## About <a name = "about"></a>
 
-Not for production. Just for learning unofficial Flathub client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
+Unofficial Flathub client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
 
 ## Getting Started <a name = "getting_started"></a>
 
