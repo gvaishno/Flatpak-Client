@@ -34,4 +34,4 @@ npm start
 
 ## License <a name = "license"></a>
 
-[`GNU GENERAL PUBLIC LICENSE v3`](LICENSE.md)
+[`GNU GENERAL PUBLIC LICENSE v3`](LICENSE)
