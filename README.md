@@ -4,7 +4,6 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Download](#download)
 - [To Develop](#to_develop)
 - [License](#license)
 
@@ -15,10 +14,6 @@ Not for production. Just for learning unofficial Flathub client for Linux using 
 ## Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-## Download <a name = "download"></a>
-
-Options will be available soon.
 
 ## To Develop <a name = "to_develop"></a>
 
