@@ -1,0 +1,67 @@
+{
+  "name": "flatpak-client",
+  "productName": "Flatpak Client",
+  "version": "1.0.0",
+  "description": "Unofficial Flatpak Client",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder",
+    "package:linux": "electron-packager ./ Flatpak Client --platform=linux --out ./out --electron-version 17.1.2 --overwrite --icon=assets/icons/png/256x256.png --prune=true --arch=x64 --version-string.ProductName=Flatpak Client --version-string.ProductVersion=1.0.0 --executable-name=flatpak-client",
+    "deb64": "electron-installer-debian --src out/Flatpak-linux-x64/ --dest out/installers/ --arch amd64",
+    "make": "electron-forge make"
+  },
+  "repository": "https://github.com/gvaishno/Flatpak-For-Linux",
+  "keywords": [
+    "flatpak",
+    "flathub",
+    "client"
+  ],
+  "author": "Vaishno Chaitanya",
+  "license": "GNU GENERAL",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.63",
+    "@electron-forge/maker-deb": "^6.0.0-beta.63",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
+    "@electron-forge/maker-zip": "^6.0.0-beta.63",
+    "electron": "^17.1.2"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "appId": "flatpak-client",
+        "name": "flatpak-client",
+        "productName": "Flatpak Client",
+        "directories": {
+          "output": "./out"
+        }
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "build" : {
+    "linux" : {
+      "icon" : "./assets/icons/1024.icns"
+    }
+  }
+}
